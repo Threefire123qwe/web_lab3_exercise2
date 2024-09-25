@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Object</title>
+</head>
+<body>
+    <h1>User Agent Information</h1>
+    <pre id="userAgentInfo"></pre>
+
+    <script>
+        // Using document.write is not necessary here; we can update the DOM directly.
+        // Getting the userAgent property from the navigator object
+        const userAgent = navigator.userAgent;
+
+        // Selecting the pre element where the information will be displayed
+        const userAgentInfoElement = document.getElementById('userAgentInfo');
+
+        // Updating the pre element with the userAgent string
+        userAgentInfoElement.textContent = userAgent;
+    </script>
+</body>
+</html>
